@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,900;1,200;1,400;1,500;1,600;1,900&display=swap');
 @import "./app";
 @import "./normalize";
+@import "card";
 
 $mobile_width: 640px;
 $tablet_width: 760px;
@@ -12,7 +13,5 @@ $font-family: 'Montserrat', sans-serif;
 
 
 body {
-    background-color: rgb(0, 0, 0);
-    color: #4D4D4D;
     font-family: $font-family;
 }

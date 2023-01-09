@@ -1,31 +1,4 @@
+
 .app {
-    // display: grid;
-    // grid-template-columns: repeat(12, 1fr);
-    background-color: rgb(0, 0, 0);
-    color: rgb(206, 206, 206);
-
-    height: 100vh;
-    .side-bar {
-        width: 350px;
-        background-color: rgb(36, 36, 36);
-        height: 100%;
-
-        &__workspace {
-            width: 80px;
-            border-right: 2px solid rgb(54, 54, 54) ;
-            padding-top: 20px ;
-
-            .workspace {
-                padding: 0.2rem;
-                aspect-ratio: 1;
-                // border: 2px solid grey;
-                background-color: rgb(55, 55, 55);
-                border-radius: 10px;
-                display: grid;
-                place-items: center;
-                margin-bottom: 10px;
-                margin-inline: 10px;
-            }
-        }
-    }
+   margin: 5rem;
 }
