@@ -12,6 +12,9 @@ const App: React.FunctionComponent<IApp> = (props) => {
   return (
     <div className="app">
       <Card />
+      <Card />
+      <Card />
+      <Card />
     </div>
     );
   }

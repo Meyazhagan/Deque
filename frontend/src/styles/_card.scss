@@ -9,40 +9,126 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        .card__tags {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 5px;
-            width: 100%;
-
-            .tag {
-                --tag-border-color: #000;
-                padding: 5px 12px;
-                font-size: 10px;
-                font-weight: 600;
-                border-radius: 20px;
-                border: 2px solid;
-            }
-        }
     }
 
     .card__body {
         padding-top: 1rem;
 
-        .card__title {
-            font-weight: 500;
-            font-size: 16px;
-            padding-bottom: 0.5rem;
-        }
-
         .card__info {
             font-size: 14px;
             color: rgb(80, 80, 80);
-            padding-bottom: 0.5rem;
+            padding: 0.5rem 0;
+        }
+        
+        .card__subtask {
+            font-size: 14px;
+            .tasks {
+                border-bottom: 1px solid black;
+
+                .task {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    margin-bottom: 0.5rem;
+                }
+
+            }
+            .task__action {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin-top: 0.5rem;
+            }
+        }
+
+        .card__attachment {
+            display: flex;
+            gap: 0.3rem;
+            margin-top: 1rem;
+            .images {
+                flex-shrink: 0;
+                width: 32px;
+                height: 32px;
+                border-radius: 5px;
+                background-color: rebeccapurple;
+
+            }
+            .images--count {
+                font-size: 14px;
+                color: aliceblue;
+                display: grid;
+                place-content: center;
+            }
         }
     }
 
-    .card__footer {}
+    .card__tags {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+        width: 100%;
+
+        .tag {
+            --tag-border-color: #000;
+            padding: 5px 8px;
+            font-size: 10px;
+            font-weight: 600;
+            border-radius: 20px;
+            border: 1px solid var(--tag-border-color);
+        }
+    }
+
+    .card__title {
+        font-weight: 500;
+        font-size: 16px;
+        // padding-bottom: 0.5rem;
+    }
+    
+    .card__footer {
+        font-size: 14px;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            display: flex;
+            // gap: 1rem;
+            .avatar {
+                width: 30px;
+                height: 30px;
+                background-color: aquamarine;
+                border-radius: 15px;
+                margin-right: -8px;
+                border: 1px solid gray;
+            }
+
+            .avatar--count {
+                display: grid;
+                place-content: center;
+            }
+
+            .avatar--add {
+                margin-left: 18px;
+                border: 1px dashed grey;
+                display: grid;
+                place-content: center;
+            }
+        }
+
+        .right {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+
+            .info {
+                display: flex;
+                align-items: center;
+                gap: 0.2rem;
+                font-weight: 600;
+                color: rgb(71, 71, 71);
+            }
+        }
+    }
 }
