@@ -11,10 +11,31 @@ const App: React.FunctionComponent<IApp> = (props) => {
 
   return (
     <div className="app">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <div className="card__group">
+        <Card />
+        <Card />
+        {/* 
+        <Card />
+        <Card /> */}
+      </div>
+      <div className="card__group">
+        <Card />
+        <Card />
+        <Card />
+        {/* <Card /> */}
+      </div>
+      <div className="card__group">
+        <Card />
+        <Card />
+        {/* <Card />
+        <Card /> */}
+      </div>
+      <div className="card__group">
+        <Card />
+        <Card />
+        <Card />
+        {/* <Card /> */}
+      </div>
     </div>
     );
   }
