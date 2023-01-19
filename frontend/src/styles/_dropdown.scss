@@ -1,0 +1,15 @@
+
+.dropdown {
+    .heading {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--text2);
+
+        .title {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+}
