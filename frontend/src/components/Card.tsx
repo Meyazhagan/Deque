@@ -7,12 +7,6 @@ interface ICard {
 
 }
 
-// RiCheckboxBlankCircleLine
-// RiCheckboxCircleFill
-// RiCheckboxCircleLine
-
-// const isMinView = true;
-
 const DefaultCardView: React.FunctionComponent<ICard> = (props) => {
     return (<div className="card">
         <div className="card__header">
@@ -83,15 +77,15 @@ const CompactCard: React.FunctionComponent<ICard> = (props) => {
 
         <div className="card__footer">
             <div className="left">
-                <div className="avatar hover"></div>
-                <div className="avatar hover"></div>
+                <div className="avatar"></div>
+                <div className="avatar"></div>
                 <div className="avatar avatar--count">+8</div>
                 <div className="avatar avatar--add"><BiPlus /></div>
             </div>
 
             <div className="right">
-                <div className="info attachment--count hover"><TbFileDescription size={"1rem"} /> 4 </div>
-                <div className="info message--count hover"><TbMessage size={"1rem"} /> 5 </div>
+                <div className="info attachment--count"><TbFileDescription size={"1rem"} /> 4 </div>
+                <div className="info message--count"><TbMessage size={"1rem"} /> 5 </div>
             </div>
         </div>
     </div>)
@@ -100,7 +94,7 @@ const CompactCard: React.FunctionComponent<ICard> = (props) => {
 const Card: React.FunctionComponent<ICard> = (props) => {
     const [isMinView, setIsMinView] = useState(true)
     return <>
-    <button onClick={() => setIsMinView(p => !p)}>toggle</button>
+    {/* <button onClick={() => setIsMinView(p => !p)}>toggle</button> */}
     {isMinView ? <CompactCard /> : <DefaultCardView /> }</>
 }
 

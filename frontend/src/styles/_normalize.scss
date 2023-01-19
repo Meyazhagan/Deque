@@ -41,20 +41,21 @@ button,
 input,
 select,
 textarea {
-    font-family: sans-serif
+    font-family: sans-serif;
+
 }
 
 body {
-    margin: 0
+    margin: 0;
 }
 
 a:focus {
-    outline: thin dotted
+    outline: thin dotted;
 }
 
 a:active,
 a:hover {
-    outline: 0
+    outline: 0;
 }
 
 h1 {
@@ -245,6 +246,14 @@ input[type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
     *overflow: visible
+}
+
+input[type="text"] {
+    border: none;
+
+    &:hover, &:focus {
+        outline: none;
+    }
 }
 
 button[disabled],
