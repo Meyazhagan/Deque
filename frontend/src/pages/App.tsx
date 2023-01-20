@@ -1,6 +1,6 @@
-import Card from "../components/Card";
+import Card from "../Components/Card";
 import React from "react";
-import Dropdown from "../components/Dropdown";
+import Dropdown from "../Components/Dropdown";
 import { ICONS } from "../Helper/Constant";
 
 interface IApp {
@@ -32,11 +32,8 @@ const App: React.FunctionComponent<IApp> = (props) => {
               <input type="text" placeholder="Search..." />
             </div>
 
-            <Dropdown title="favorites" items={[
-              {
-                value: "Mirage", color: "yellow"
-              }
-            ]} />
+            <Dropdown title="favorites" items={[]} />
+            <Dropdown title="All Projects" items={[]} />
             {/* <Dropdown title="favorites" items={[]} />
             <Dropdown title="favorites" items={[]} /> */}
           </div>
@@ -44,9 +41,76 @@ const App: React.FunctionComponent<IApp> = (props) => {
         </div>
       </div>
       <div className="main-panel">
+        <div className="inner">
+          <div className="project__info">
+            <div className="project__section">
+              <div className="title"><ICONS.SQUARE /> Unique</div>
+              <div className="tags">
+                <div className="tag"><ICONS.SQUARE /> Website</div>
+                <div className="tag"><ICONS.SQUARE /> App</div>
+                <div className="tag"><ICONS.SQUARE /> Dribble Shot</div>
+              </div>
+            </div>
+            <div className="action">
+              <div className="search"><ICONS.SEARCH /></div>
+              <div className="add__to__favorite"><ICONS.STAR /></div>
+              <div className="action"><ICONS.ACTION /></div>
+            </div>
+          </div>
+
+          <div className="secondary__info">
+            <div className="tabs">
+              <div className="tab">Discussion <span className="notification" >3</span> </div>
+              <div className="tab active">Tasks</div>
+              <div className="tab">Timeline</div>
+              <div className="tab">Files</div>
+              <div className="tab">Overview</div>
+            </div>
+            <div className="members">
+              <div className="avatar"></div>
+              <div className="avatar"></div>
+              <div className="avatar"></div>
+              <div className="avatar avatar--count">+34</div>
+              <div className="member__add">+</div>
+            </div>
+          </div>
+
+        </div>
+          <div className="view__info">
+            <div className="views">
+              <div className="view active"><ICONS.KANBAN /> Kanban </div>
+              <div className="view"><ICONS.TABLE /> Table </div>
+              <div className="view"><ICONS.LIST /> List </div>
+            </div>
+            <div className="view active"><ICONS.FILTER/> Filter</div>
+          </div>
         <div className="board">
 
           <div className="card__group">
+            <div className="group__title dot red-dot">New Request</div>
+            <div className="add__card">+</div>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+          <div className="card__group">
+            <div className="group__title dot red-dot">In Progress</div>
+            <div className="add__card">+</div>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+          <div className="card__group">
+            <div className="group__title dot red-dot">Completed</div>
+            <div className="add__card">+</div>
             <Card />
             <Card />
             <Card />
@@ -57,7 +121,19 @@ const App: React.FunctionComponent<IApp> = (props) => {
             <Card />
             <Card />
           </div>
-        
+          <div className="card__group">
+            <div className="group__title dot red-dot">New Request</div>
+            <div className="add__card">+</div>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+          <div className="card__group">
+            <div className="group__title dot red-dot">New Request</div>
+            <div className="add__card">+</div>
+          </div>
+
         </div>
       </div>
       <div className="right-panel">
