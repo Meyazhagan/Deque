@@ -67,9 +67,9 @@ const App: React.FunctionComponent<IApp> = (props) => {
               <div className="tab">Overview</div>
             </div>
             <div className="members">
-              <div className="avatar"></div>
-              <div className="avatar"></div>
-              <div className="avatar"></div>
+            <img className="avatar" src="https://i.pravatar.cc/450" alt="" />
+            <img className="avatar" src="https://i.pravatar.cc/450" alt="" />
+            <img className="avatar" src="https://i.pravatar.cc/450" alt="" />
               <div className="avatar avatar--count">+34</div>
               <div className="member__add">+</div>
             </div>
@@ -87,50 +87,50 @@ const App: React.FunctionComponent<IApp> = (props) => {
         <div className="board">
 
           <div className="card__group">
-            <div className="group__title dot red-dot">New Request</div>
+            <div className="group__title dot dot--grey">New Request</div>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
             <div className="add__card">+</div>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
           </div>
           <div className="card__group">
-            <div className="group__title dot red-dot">In Progress</div>
+            <div className="group__title dot dot--blue">In Progress</div>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
             <div className="add__card">+</div>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
           </div>
           <div className="card__group">
-            <div className="group__title dot red-dot">Completed</div>
+            <div className="group__title dot dot--green">Completed</div>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
             <div className="add__card">+</div>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
           </div>
           <div className="card__group">
-            <div className="group__title dot red-dot">New Request</div>
+            <div className="group__title dot dot--orange">Verified</div>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
             <div className="add__card">+</div>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
           </div>
           <div className="card__group">
-            <div className="group__title dot red-dot">New Request</div>
+            {/* <div className="group__title dot red-dot">New Request</div> */}
             <div className="add__card">+</div>
           </div>
 

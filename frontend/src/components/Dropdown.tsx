@@ -15,7 +15,7 @@ const ExpandedView: React.FunctionComponent<IDropdown> = (props) => {
 }
 
 const Dropdown: React.FunctionComponent<IDropdown> = (props) => {
-    const [isExpanded, setIsExpanded] = useState(false)
+    const [isExpanded, setIsExpanded] = useState(true)
 
     let {title, items} = props
     return <div className="dropdown">

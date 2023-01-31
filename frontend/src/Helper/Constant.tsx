@@ -1,4 +1,4 @@
-import { AiOutlineStar, AiOutlineUnorderedList } from "react-icons/ai"
+import { AiOutlineStar, AiOutlineFile } from "react-icons/ai"
 import { MdExpandMore, MdExpandLess } from "react-icons/md";
 import { RiSearchLine, RiCheckboxBlankCircleLine, RiEqualizerFill } from "react-icons/ri"
 import { TbTriangle, TbSquareRotated, TbSquare } from "react-icons/tb";
@@ -7,6 +7,7 @@ import { BiDotsVerticalRounded } from "react-icons/bi";
 import { BsKanban } from "react-icons/bs";
 import { RxTable } from "react-icons/rx"
 import { ImList2 } from "react-icons/im"
+import { HiOutlineChatBubbleBottomCenter } from "react-icons/hi2"
 
 const ICONS = {
     "STAR": AiOutlineStar,
@@ -22,7 +23,9 @@ const ICONS = {
     "KANBAN": BsKanban,
     "FILTER": RiEqualizerFill,
     "TABLE": RxTable,
-    "LIST": ImList2
+    "LIST": ImList2,
+    "FILE": AiOutlineFile,
+    "CHAT": HiOutlineChatBubbleBottomCenter
 }
 
 const COLOR = {
