@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { } from "react";
 import { BiDotsVerticalRounded, BiPlus } from "react-icons/bi";
 import { RiCheckboxBlankCircleLine, RiCheckboxCircleFill } from "react-icons/ri"
-import { TbFileDescription, TbMessage } from "react-icons/tb";
 import avatar from "../Assets/piper.jpg";
 import { ICONS } from "../Helper/Constant";
 
@@ -66,9 +65,7 @@ const CompactCard: React.FunctionComponent<ICard> = (props) => {
 }
 
 const Card: React.FunctionComponent<ICard> = (props) => {
-    const [isMinView, setIsMinView] = useState(true)
-    return <>
-    <CompactCard /> </>
+    return <><CompactCard /> </>
 }
 
 export default Card;

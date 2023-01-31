@@ -2,6 +2,7 @@ import Card from "../Components/Card";
 import React from "react";
 import Dropdown from "../Components/Dropdown";
 import { ICONS } from "../Helper/Constant";
+import avatar from "../Assets/piper.jpg";
 
 interface IApp {
   name: string
@@ -67,9 +68,9 @@ const App: React.FunctionComponent<IApp> = (props) => {
               <div className="tab">Overview</div>
             </div>
             <div className="members">
-            <img className="avatar" src="https://i.pravatar.cc/450" alt="" />
-            <img className="avatar" src="https://i.pravatar.cc/450" alt="" />
-            <img className="avatar" src="https://i.pravatar.cc/450" alt="" />
+            <img className="avatar" src={avatar} alt="" />
+            <img className="avatar" src={avatar} alt="" />
+            <img className="avatar" src={avatar} alt="" />
               <div className="avatar avatar--count">+34</div>
               <div className="member__add">+</div>
             </div>
