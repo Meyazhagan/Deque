@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BiDotsVerticalRounded, BiPlus } from "react-icons/bi";
 import { RiCheckboxBlankCircleLine, RiCheckboxCircleFill } from "react-icons/ri"
 import { TbFileDescription, TbMessage } from "react-icons/tb";
-import avatar from "../Assets/avatar.png";
+import avatar from "../Assets/piper.jpg";
 import { ICONS } from "../Helper/Constant";
 
 interface ICard {
@@ -35,14 +35,14 @@ const CompactCard: React.FunctionComponent<ICard> = (props) => {
 
                 <div className="task__action"><BiPlus />Add Subtask</div>
             </div>
-
+            {/* https://i.pravatar.cc/450 */}
             <div className="card__attachment">
-                <img className="images" src="https://i.pravatar.cc/450" alt="" />
-                <img className="images" src="https://i.pravatar.cc/450" alt="" />
-                <img className="images" src="https://i.pravatar.cc/450" alt="" />
-                <img className="images" src="https://i.pravatar.cc/450" alt="" />
-                <img className="images" src="https://i.pravatar.cc/450" alt="" />
-                <img className="images" src="https://i.pravatar.cc/450" alt="" />
+                <img className="images" src={avatar} alt="" />
+                <img className="images" src={avatar} alt="" />
+                <img className="images" src={avatar} alt="" />
+                <img className="images" src={avatar} alt="" />
+                <img className="images" src={avatar} alt="" />
+                <img className="images" src={avatar} alt="" />
                 <div className="images images--count">+8</div>
             </div>
         </div>
@@ -50,9 +50,9 @@ const CompactCard: React.FunctionComponent<ICard> = (props) => {
     </div>
         <div className="card__footer">
             <div className="left">
-                <img className="avatar" src="https://i.pravatar.cc/450" alt="" />
-                <img className="avatar" src="https://i.pravatar.cc/450" alt="" />
-                <img className="avatar" src="https://i.pravatar.cc/450" alt="" />
+                <img className="avatar" src={avatar} alt="" />
+                <img className="avatar" src={avatar} alt="" />
+                <img className="avatar" src={avatar} alt="" />
                 <div className="avatar avatar--center">+8</div>
                 <div className="avatar avatar--add avatar--center"><BiPlus /></div>
             </div>
