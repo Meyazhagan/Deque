@@ -263,16 +263,16 @@
 
          // margin: 1rem;
          .dot--orange::before {
-            background-color: orange;
+            background-color: rgb(255, 188, 63);
          }
          .dot--blue::before {
-            background-color: blue;
+            background-color: rgb(85, 85, 255);
          }
          .dot--grey::before {
-            background-color: grey;
+            background-color: rgb(154, 154, 154);
          }
          .dot--green::before {
-            background-color: green;
+            background-color: rgb(81, 244, 81);
          }
       }
    }
