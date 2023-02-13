@@ -1,8 +1,8 @@
 import React, { } from "react";
 import { BiDotsVerticalRounded, BiPlus } from "react-icons/bi";
 import { RiCheckboxBlankCircleLine, RiCheckboxCircleFill } from "react-icons/ri"
-import avatar from "../Assets/piper.jpg";
-import { ICONS } from "../Helper/Constant";
+import avatar from "../assets/piper.jpg";
+import { ICONS } from "../helper/Constant";
 
 interface ICard {
 
