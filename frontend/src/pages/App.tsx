@@ -1,8 +1,8 @@
-import Card from "../Components/Card";
+import Card from "../components/Card";
 import React from "react";
-import Dropdown from "../Components/Dropdown";
-import { ICONS } from "../Helper/Constant";
-import avatar from "../Assets/piper.jpg";
+import Dropdown from "../components/Dropdown";
+import { ICONS } from "../helper/Constant";
+import avatar from "../assets/piper.jpg";
 
 interface IApp {
   name: string
